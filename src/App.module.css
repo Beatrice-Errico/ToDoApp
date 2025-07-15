@@ -1,0 +1,136 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  background-color: #ffffff;
+  border: 2px solid #cccccc; /* grigio medio → contrasto netto */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 2rem 2rem;
+  
+}
+
+
+.logo {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  margin-bottom: 3rem;
+  transform: rotate(-15deg);
+  font-weight: 900;
+  color: #000;
+}
+
+/* "to DO" tocca il bordo sinistro in alto */
+.toDo {
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 8.2rem;
+  font-weight: 800;
+  color: #000;
+  line-height: 1;
+}
+
+/* "list" in basso a destra */
+.list {
+  margin-top: 35px;
+  position: absolute;
+  top: 80px;
+  left: 56%;
+  font-size: 8rem;
+  font-weight: 800;
+  color: #000;
+  line-height: 1;
+}
+
+.cardList {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.buttonRow {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.circleRed,
+.circleGreen {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.circleRed:hover,
+.circleGreen:hover {
+  transform: scale(1.1);
+}
+
+.circleRed {
+  background-color: #e74c3c;
+}
+
+.circleGreen {
+  background-color: #2ecc71;
+}
+ 
+ 
+
+@media (max-width: 480px) {
+  .logo {
+    margin-top: 40px;
+    height: 130px;
+    margin-bottom: 2rem;
+    transform: rotate(-15deg);
+    position: relative;
+  }
+
+  .toDo {
+    font-size: 5.2rem;
+    position: absolute;
+    top: -10px;
+    left: -0px;
+    font-weight: 900;
+    line-height: 1;
+    
+  }
+
+  .list {
+    font-size: 5.2rem;
+    position: absolute;
+    top: 60px;
+    left: 52%;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .container {
+    padding: 1rem;
+    height: auto;
+  }
+}
+
+
+ 
