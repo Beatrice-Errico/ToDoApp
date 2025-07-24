@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./CategoryCard.module.css";
 import { FaPen, FaTrash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function CategoryCard({ id, label, onUpdate, onDelete }) {
   const [editing, setEditing] = useState(false);
@@ -40,7 +41,7 @@ export default function CategoryCard({ id, label, onUpdate, onDelete }) {
           }}
         />
       ) : (
-        <span className={styles.label}>{label}</span>
+        <Link to={`/category/${label.replace(/\//g, "-")}`} className={styles.label}> {label}</Link>
       )}
 
       <div className={styles.iconGroup}>

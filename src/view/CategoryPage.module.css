@@ -1,0 +1,41 @@
+.page {
+  padding: 2rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: auto;
+}
+
+.backButton {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.backButton:hover {
+  background-color: #333;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
