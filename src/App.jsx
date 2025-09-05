@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./App.module.css";
 import CategoryCard from "./components/CategoryCard";
-import { categories as defaultCategories } from "./data/defaultCategories.js";
+import { categories as defaultCategories } from "./Data/defaultCategories.js";
 import ConfirmModal from "./components/ConfirmModal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CategoryPage from "./view/CategoryPage";
